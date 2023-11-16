@@ -1,0 +1,192 @@
+.details {
+    margin-top: 90px;
+
+    &__box {
+        padding-left: 50px;
+        position: relative;
+        height: 700px;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, #000 40%, rgba(0, 0, 0, 0.20) 75%, rgba(0, 0, 0, 0.00) 100%);
+            backdrop-filter: blur(7px);
+        }
+    }
+
+    &__about {
+        position: relative;
+        z-index: 2;
+        margin-top: 100px;
+    }
+
+    &__title {
+        color: #FFF;
+        font-size: 50px;
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        color: #FFF;
+        font-size: 20px;
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        margin-bottom: 25px;
+    }
+
+    &__info {
+        color: rgba(255, 255, 255, 0.60);
+        font-size: 20px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+        margin-bottom: 100px;
+        display: flex;
+        gap: 10px;
+    }
+
+    &__time {
+        margin-left: 30px;
+    }
+
+    &__button {
+        width: max-content;
+        background: #149A03;
+        padding: 10px 15px;
+        border-radius: 10px;
+        font-family: "Raleway";
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 70px;
+
+        svg {
+            font-size: 30px;
+        }
+    }
+
+    &__image {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+
+        img {
+            width: 311px;
+            height: 462px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+    }
+
+    &__actors {
+        position: relative;
+        z-index: 2;
+        grid-column: span 2;
+
+        &_title {
+            color: #FFF;
+            text-align: left;
+            font-size: 16px;
+            font-family: "Raleway";
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+            margin-bottom: 30px;
+        }
+
+        &_box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+    }
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+    }
+}
+
+.details__block {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+
+    &_title {
+        color: #FFF;
+        font-size: 22px;
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+
+    &_text {
+        color: #FFF;
+        font-size: 20px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+    }
+}
+
+.details__recommend {
+    margin-bottom: 70px;
+
+    &_title {
+        color: #FFF;
+        font-size: 22px;
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 30px;
+    }
+
+    &_box {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 24px;
+    }
+
+    &_movie {
+        height: 462px;
+        border-radius: 10px;
+        border: 1px solid #000;
+        box-shadow: 0px 4px 4px 0px #000;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+}
